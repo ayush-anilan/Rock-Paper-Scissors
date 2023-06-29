@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial");
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 965px;
+    grid-template-columns: 1920px;
+    grid-template-rows: 120px 1fr 1fr 1fr 50px;
+    grid-template-areas:
+        "header"
+        "content-1"
+        "content-2"
+        "content-3"
+        "footer";
+}
+
+
+.header{
+    grid-area: header;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #172554;
+}
+
+.header h1{
+    font-family: "Questrial";
+    font-size: 50px;
+    color: white;
+}
+
+.content-1 {
+    display: grid;
+    grid-area: content-1;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-1  .win{
+    font-family: "Questrial";
+    font-size: 40px;
+}
+
+.content-2{
+    grid-area: content-2;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px;
+    column-gap: 40px;
+    justify-content: center;   
+}
+
+.btn{
+    background-color: beige;
+    border-radius: 14px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #172554;
+    border: none;
+    cursor: pointer;
+}
+
+.content-2 > div{
+    display: grid;
+    background-color: beige;
+    border: 10px solid #172554;
+    border-radius: 14px;
+}
+
+.content-2 > div .rock{
+    width: 80%;
+
+}
+.content-2 > div .paper{
+    width: 70%;
+
+}
+.content-2 > div .scissor{
+    width: 80%;
+
+}
+
+.content-3{
+    display: grid;
+    grid-area: content-3;
+    justify-content: center;
+    grid-template-rows: 40px 90px;
+}
+
+.content-3 .score{
+    display: grid;
+    justify-content: center;
+    padding-right: 50px;
+    font-family: "Questrial";
+    font-size: 30px;
+}
+
+.content-3 .winner{
+    display: grid;
+    justify-content: center;
+    font-family: "Questrial";
+    font-size: 40px;
+}
+
+.footer{
+    grid-area: footer;
+    display: grid;
+    background-color: #172554;
+    padding-top: 15px;
+    justify-content: center;
+    font-family: "Questrial";
+    color: white;
+}
+
+.content-2 .item:hover{
+    background-color: #172554;
+    color: white;
+}
